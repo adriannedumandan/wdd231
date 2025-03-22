@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .menu-btn {
+        display: none;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .resources-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr; 
+    }
+}    

@@ -1,19 +1,77 @@
 :root {
-    --primary-color: #2C3E50;
-    --secondary-color: #BDC3C7;
-    --background-color: white;
-    --heading-font: 'Merriweather', serif;
-    --text-font: 'Roboto', sans-serif;
+  --primary-color: #2C3E50;
+  --secondary-color: #BDC3C7;
+  --background-color: white;
+  --heading-font: 'Merriweather', serif;
+  --text-font: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: var(--text-font);
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    padding: 20px;
+  font-family: var(--text-font);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 20px;
 }
 
-header {
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+.header {
   background-color: var(--primary-color);
-  
+  color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+.menu-btn {
+  display: block;
+  cursor: pointer
+}
+
+.links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #1f2a38;
+  padding: 10px;
+}
+
+.links.active {
+  display: flex;
+}
+}
+
+.links {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-size: 15px;
 }
