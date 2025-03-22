@@ -1,90 +1,38 @@
+/* Root Variables */
 :root {
   --primary-color: #2C3E50;
   --secondary-color: #BDC3C7;
   --background-color: white;
+  --accent-color: #1abc9c; /* Define accent color for headings and highlights */
   --heading-font: 'Merriweather', serif;
   --text-font: 'Roboto', sans-serif;
 }
 
+/* Body Styles */
 body {
   font-family: var(--text-font);
   background-color: var(--background-color);
   color: var(--primary-color);
   padding: 20px;
+  margin: 0; /* Remove extra space around the body */
 }
 
+/* Global Headings */
 h1, h2 {
   font-family: var(--heading-font);
-  color: var(--accent1-color);
-}
-
-.header {
-  background-color: var(--primary-color);
-  color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
-header img {
-  height: 150px;
-  width: auto;
-  box-shadow: 0 4px 6px #555;
-}
-
-.site-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-left: 20px;
-  margin-top: 50px;
-}
-
-.menu-btn {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-.menu-btn {
-  display: block;
-  cursor: pointer
-}
-
-}
-
-.links {
-  display: flex; 
-  justify-content: center;
-  gap: 100px;
-  background-color: var(--secondary-color);
-  padding: 20px; 
-}
-
-.links ul {
-  list-style: none; 
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.links a {
-  text-decoration: none; 
-  color: black; 
-  font-size: 20px; 
-  padding: 5px; 
-  font-weight: bold; 
-}
-
-.links a:hover {
   color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
-.links.active {
-  display: flex;
+/* Main Styling */
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the main body */
+  padding: 20px;
 }
 
-
+/* Section Styling */
 .coursework, .location, .certificate {
   background-color: var(--background-color);
   padding: 20px;
@@ -93,6 +41,7 @@ header img {
   margin-bottom: 30px;
 }
 
+/* "Course Work" Section */
 .coursework p {
   font-size: 1.2rem;
   margin: 10px 0;
@@ -166,17 +115,15 @@ header img {
 
 .certificate .course:hover {
   background-color: var(--primary-color);
-  color: rgb(2, 2, 2);
+  color: white;
 }
 
+/* Footer Styling */
 footer {
-  margin-top: 10px;
-  height: 50px;
   text-align: center;
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  position: relative;
-  padding-top: 5px;
-  padding-bottom: 25px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  margin-top: 30px;
 }
-
