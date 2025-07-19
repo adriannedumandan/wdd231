@@ -22,21 +22,21 @@ h1, h2 {
   background-color: var(--primary-color);
   color: var(--background-color);
   display: flex;
-  justify-content: center;
-  padding: 1rem;
+  justify-content:flex-start;
+  padding: 2px;
 }
 
 header img {
-  height: 150px;
+  height: 80px;
   width: auto;
-  box-shadow: 0 4px 6px #555;
+  margin: 20px;
 }
 
 .site-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-left: 20px;
-  margin-top: 50px;
+  margin-top: 45px;
+  margin-bottom: 40px;
 }
 
 .menu-btn {
@@ -54,9 +54,6 @@ header img {
 }
 
 .links {
-  display: flex; 
-  justify-content: center;
-  gap: 100px;
   background-color: var(--secondary-color);
   padding: 20px; 
 }
@@ -66,6 +63,7 @@ header img {
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 30px;
 }
 
 .links a {
@@ -169,6 +167,13 @@ header img {
   color: rgb(2, 2, 2);
 }
 
+.social-icons img {
+  width: auto;
+  height: 30px;
+  margin: 0 5px;
+}
+
+
 footer {
   margin-top: 10px;
   height: 50px;
@@ -176,7 +181,7 @@ footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   position: relative;
-  padding-top: 5px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 65px;
 }
 
