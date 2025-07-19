@@ -171,8 +171,9 @@ header img {
   width: auto;
   height: 30px;
   margin: 0 5px;
+  background-color: var(--primary-color);
+  list-style: none;
 }
-
 
 footer {
   margin-top: 10px;
